@@ -13,7 +13,8 @@ const editor = CodeMirror.fromTextArea(document.getElementById("code"), {
               matchBrackets: true,
             });
 // set the initial value of the editor
-editor.setValue("print('Hello world')");
+let default_value = "from time import time\nclass Solution:\n    def solveTask(self, a:int,b:int):\n        return a+b\nt1=time()\nsol=Solution()\nfor _ in range(10**6):\n    sol.solveTask(1,2)\nprint(time()-t1)";
+editor.setValue(default_value);
 output.value = "Initializing...\n";
 
 // Add pyodide returned value to the output
