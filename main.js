@@ -30,7 +30,7 @@ function clearHistory() {
 // init Pyodide and show sys.version when it's loaded successfully
 async function main() {
   let pyodide = await loadPyodide({
-    indexURL: "https://cdn.jsdelivr.net/pyodide/v0.26.4/full/",
+    indexURL: "https://cdn.jsdelivr.net/pyodide/v0.27.5/full/",
   });
   output.value = pyodide.runPython(`
       import sys
